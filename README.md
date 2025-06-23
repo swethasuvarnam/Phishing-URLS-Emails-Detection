@@ -32,32 +32,35 @@ Displays distinct messages and interactive buttons  based on the detection resul
 ## ⚙️ How It Works
 
 ### URL Phishing Detection
-The URL detection module analyzes various features extracted from a given URL to classify it as legitimate or phishing. The FeatureExtraction class meticulously extracts over 20 features, including:
 
-Presence of IP address in the URL
-Length of the URL
-Usage of URL shortening services
-Presence of @ symbol in the URL
-Redirection count
-Prefix/Suffix in the domain
-Number of subdomains
-HTTPS usage and certificate validity
-Domain registration length
-Favicon characteristics
-Non-standard port usage
-Request URL, Anchor URL, and Links in Script Tags analysis
-Server Form Handler and Information Email presence
-Abnormal URL characteristics
-Website forwarding behavior
-Status bar customization and disabling right-click
-Pop-up window usage and iframe redirection
-Age of domain and DNS recording
-Website traffic, PageRank, and Google Index status
-Links pointing to the page and statistical reports
-These features are fed into a pre-trained Gradient Boosting Classifier model (url_detection.pkl), which outputs a prediction and confidence score. The url_phishing.ipynb notebook details the training and evaluation process for this model using the phishing.csv dataset.
+The URL detection module analyzes various features extracted from a given URL to classify it as legitimate or phishing. The `FeatureExtraction` class meticulously extracts over 20 features, including:
+
+* Presence of IP address in the URL
+* Length of the URL
+* Usage of URL shortening services
+* Presence of `@` symbol in the URL
+* Redirection count
+* Prefix/Suffix in the domain
+* Number of subdomains
+* HTTPS usage and certificate validity
+* Domain registration length
+* Favicon characteristics
+* Non-standard port usage
+* Request URL, Anchor URL, and Links in Script Tags analysis
+* Server Form Handler and Information Email presence
+* Abnormal URL characteristics
+* Website forwarding behavior
+* Status bar customization and disabling right-click
+* Pop-up window usage and iframe redirection
+* Age of domain and DNS recording
+* Website traffic, PageRank, and Google Index status
+* Links pointing to the page and statistical reports
+
+These features are fed into a pre-trained Gradient Boosting Classifier model (`url_detection.pkl`), which outputs a prediction and confidence score. The `url_phishing.ipynb` notebook details the training and evaluation process for this model using the `phishing.csv` dataset.
 
 ### Email Spam Detection
-The email spam detection component processes the text content of an email. It uses a CountVectorizer (vectorizer.pkl) to transform the text into numerical features, which are then input into a pre-trained Multinomial Naive Bayes model (email_detection.pkl). This model classifies the email as either "Ham" (safe) or "Spam." The email_phishing.ipynb notebook outlines the data preprocessing, model training (including handling class imbalance with SMOTE), and evaluation for this spam detection model using the emails.csv dataset.
+
+The email spam detection component processes the text content of an email. It uses a `CountVectorizer` (`vectorizer.pkl`) to transform the text into numerical features, which are then input into a pre-trained Multinomial Naive Bayes model (`email_detection.pkl`). This model classifies the email as either "Ham" (safe) or "Spam." The `email_phishing.ipynb` notebook outlines the data preprocessing, model training (including handling class imbalance with SMOTE), and evaluation for this spam detection model using the `emails.csv` dataset.
 
 ## 🛠️ Setup and Installation
 To set up and run this project locally, follow these steps:
