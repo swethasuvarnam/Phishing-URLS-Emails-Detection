@@ -68,10 +68,9 @@ To set up and run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/Your-Repository-Name.git](https://github.com/YourUsername/Your-Repository-Name.git)
-    cd Your-Repository-Name
+    git clone [https://github.com/swethasuvarnam/Phishing-URLS-Emails-Detection.git](https://github.com/swethasuvarnam/Phishing-URLS-Emails-Detection.git)
+    cd Phishing-URLS-Emails-Detection
     ```
-    (Replace `YourUsername` with your GitHub username and `Your-Repository-Name` with the actual name of your repository).
 
 2.  **Create a virtual environment (recommended):**
     This isolates your project's dependencies from your system-wide Python packages.
@@ -104,6 +103,8 @@ To set up and run this project locally, follow these steps:
     python app.py
     ```
     The application will typically start on `http://127.0.0.1:5000/`. Open this URL in your web browser to access the Phishing URL & Spam Email Detector.
+
+
 ## 📂 Project Structure
 * `app.py`: The main Flask application file that handles web requests and integrates the detection models.
 * `feature_extraction.py`: Contains the `FeatureExtraction` class with methods to extract various features from URLs.
