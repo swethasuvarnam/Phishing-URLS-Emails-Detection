@@ -101,7 +101,7 @@ To set up and run this project locally, follow these steps:
     ```bash
     python app.py
     ```
-    The application will typically start on `https://ai-based-phishing-detector.onrender.com/`. Open this URL in your web browser to access the Phishing URL & Spam Email Detector.
+    The application will typically start on (https://ai-based-phishing-detector.onrender.com/). Open this URL in your web browser to access the Phishing URL & Spam Email Detector.
 
 
 ## 📂 Project Structure
