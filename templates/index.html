@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing & Spam Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing URL & Spam Email Detector</h1>
+        
+        <form method="POST">
+            <select name="choice" required>
+                <option value="" disabled selected>Select URL Or Email</option>
+                <option value="url">Detect URL</option>
+                <option value="email">Detect Email</option>
+            </select>
+            <input type="text" name="input_text" placeholder="Enter URL or Email Content" required>
+            <button type="submit">Check</button>
+        </form>
+
+        {% if result %}
+            <div class="result">
+                <h3>{{ result }}</h3>
+
+                {% if message_type == "url" and url_link %}
+                    <div class="link-container">
+                        {% if "Safe Website" in result %}
+                            <a href="{{ url_link }}" target="_blank" class="safe-btn">✅ Visit Safe Website</a>
+                        {% else %}
+                            <a href="{{ url_link }}" target="_blank" class="unsafe-btn">⚠️ Still want to Continue?</a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
