@@ -91,7 +91,6 @@ To set up and run this project locally, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
-    **🚨 IMPORTANT WARNING:** Your `requirements.txt` file appears to contain sensitive information (like `AKIAZBKD63YGPP266CHR` and `0yq9hNfzwFP/bWVBixScXpenJUOlVTyRwpkXitpr`). **YOU MUST REMOVE THESE LINES** from `requirements.txt` before committing it to GitHub. This file should *only* contain the names and optionally versions of Python packages required for your project, like `Flask`, `numpy`, `pandas`, `scikit-learn`, `beautifulsoup4`, `requests`, `googlesearch-python`, `whois`, `python-dateutil`, etc. Exposing credentials in a public repository is a major security risk.
 
 4.  **Ensure models and vectorizer are available:**
     The `app.py` script requires pre-trained machine learning models (`url_detection.pkl`, `email_detection.pkl`) and the `CountVectorizer` object (`vectorizer.pkl`) to function.
