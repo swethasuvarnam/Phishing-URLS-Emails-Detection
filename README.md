@@ -18,17 +18,19 @@ For URL detections, the application provides a confidence score, indicating the 
 ### Clear Visual Feedback: 
 Displays distinct messages and interactive buttons  based on the detection result, enhancing user experience and awareness.
 ## 💻 Technologies Used
-Python: Core programming language.
-Flask: Web framework for the application.
-Scikit-learn: For machine learning model training and prediction (Gradient Boosting Classifier, Multinomial Naive Bayes, CountVectorizer).
-Numpy: Numerical operations.
-Pandas: Data manipulation and analysis (used in Jupyter notebooks for dataset handling).
-BeautifulSoup4: Web scraping for URL feature extraction.
-Requests: HTTP library for making web requests.
-Whois: For domain information retrieval in URL feature extraction.
-Matplotlib & Seaborn: For data visualization (used in Jupyter notebooks).
-HTML/CSS: For the front-end web interface.
+
+* **Python:** Core programming language.
+* **Flask:** Web framework for the application.
+* **Scikit-learn:** For machine learning model training and prediction (Gradient Boosting Classifier, Multinomial Naive Bayes, CountVectorizer).
+* **Numpy:** Numerical operations.
+* **Pandas:** Data manipulation and analysis (used in Jupyter notebooks for dataset handling).
+* **BeautifulSoup4:** Web scraping for URL feature extraction.
+* **Requests:** HTTP library for making web requests.
+* **Whois:** For domain information retrieval in URL feature extraction.
+* **Matplotlib & Seaborn:** For data visualization (used in Jupyter notebooks).
+* **HTML/CSS:** For the front-end web interface.
 ## ⚙️ How It Works
+
 ### URL Phishing Detection
 The URL detection module analyzes various features extracted from a given URL to classify it as legitimate or phishing. The FeatureExtraction class meticulously extracts over 20 features, including:
 
