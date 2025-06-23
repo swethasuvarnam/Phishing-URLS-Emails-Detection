@@ -93,11 +93,11 @@ To set up and run this project locally, follow these steps:
     ```
 
 4.  **Ensure models and vectorizer are available:**
-    The `app.py` script requires pre-trained machine learning models (`url_detection.pkl`, `email_detection.pkl`) and the `CountVectorizer` object (`vectorizer.pkl`) to function.
+    * The `app.py` script requires pre-trained machine learning models (`url_detection.pkl`, `email_detection.pkl`) and the `CountVectorizer` object (`vectorizer.pkl`) to  function.
     * These `.pkl` files are generated when you run the Jupyter notebooks (`url_phishing.ipynb` and `email_phishing.ipynb`).
     * **Run these notebooks fully** in your local environment to train the models and save these necessary `.pkl` files into your project directory.
 
-5.  **Run the Flask application:**
+6.  **Run the Flask application:**
     ```bash
     python app.py
     ```
