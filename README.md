@@ -24,7 +24,6 @@ Displays distinct messages and interactive buttons  based on the detection resul
 * **Scikit-learn:** For machine learning model training and prediction (Gradient Boosting Classifier, Multinomial Naive Bayes, CountVectorizer).
 * **Numpy:** Numerical operations.
 * **Pandas:** Data manipulation and analysis (used in Jupyter notebooks for dataset handling).
-* **BeautifulSoup4:** Web scraping for URL feature extraction.
 * **Requests:** HTTP library for making web requests.
 * **Whois:** For domain information retrieval in URL feature extraction.
 * **Matplotlib & Seaborn:** For data visualization (used in Jupyter notebooks).
